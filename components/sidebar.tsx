@@ -37,7 +37,6 @@ export const Sidebar = ({ isPro }: SidebarProProps) => {
   ]
 
   const onNavigate = (url: string, pro: boolean) => {
-    // TODO: Check if PRO
     if (pro && !isPro) {
       return proModal.onOpen()
     }
